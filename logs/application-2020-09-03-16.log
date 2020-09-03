@@ -1,0 +1,1524 @@
+2020-09-03T07:19:08.917Z info: schemas {
+  "typeDefs": {
+    "types": [
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ScalarTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "AnyScalar"
+            },
+            "directives": []
+          },
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Filter"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "operator"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "value"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "AnyScalar"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "relation"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Boolean"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 123
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Pagination"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "page"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "limit"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 55
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Sorting"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "desc"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Boolean"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 58
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Domain"
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "id"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "timezone"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "systemFlag"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Boolean"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "subdomain"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandName"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandImage"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "contentImage"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "theme"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "createdAt"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "updatedAt"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 276
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "NewDomain"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "String"
+                    }
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "timezone"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "systemFlag"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Boolean"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "subdomain"
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "String"
+                    }
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandName"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandImage"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "contentImage"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "theme"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 223
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "DomainPatch"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "timezone"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "systemFlag"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Boolean"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "subdomain"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandName"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "brandImage"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "contentImage"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "theme"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 223
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "DomainList"
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "items"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "ListType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "Domain"
+                    }
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "total"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 60
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "System"
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "version"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 82
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Company"
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "id"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "toLowerName"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "employees"
+                },
+                "arguments": [
+                  {
+                    "kind": "InputValueDefinition",
+                    "name": {
+                      "kind": "Name",
+                      "value": "name"
+                    },
+                    "type": {
+                      "kind": "NamedType",
+                      "name": {
+                        "kind": "Name",
+                        "value": "String"
+                      }
+                    },
+                    "directives": []
+                  },
+                  {
+                    "kind": "InputValueDefinition",
+                    "name": {
+                      "kind": "Name",
+                      "value": "sortOption"
+                    },
+                    "type": {
+                      "kind": "NamedType",
+                      "name": {
+                        "kind": "Name",
+                        "value": "EmployeeSortType"
+                      }
+                    },
+                    "directives": []
+                  }
+                ],
+                "type": {
+                  "kind": "ListType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "Employee"
+                    }
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "createdAt"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "updatedAt"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 216
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "CompanyInput"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NonNullType",
+                  "type": {
+                    "kind": "NamedType",
+                    "name": {
+                      "kind": "Name",
+                      "value": "String"
+                    }
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "description"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "toLowerName"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 94
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "CompanySortType"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "CompanySortDirection"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "createdAt"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "CompanySortDirection"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "toLowerName"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "CompanySortDirection"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 136
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "EnumTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "CompanySortDirection"
+            },
+            "directives": [],
+            "values": [
+              {
+                "kind": "EnumValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "ASC"
+                },
+                "directives": []
+              },
+              {
+                "kind": "EnumValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "DESC"
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 52
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "ObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "Employee"
+            },
+            "interfaces": [],
+            "directives": [],
+            "fields": [
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "id"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "age"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "email"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "departmant"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "FieldDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "company"
+                },
+                "arguments": [],
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Company"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 130
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "EmployeeInput"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "id"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "age"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "Int"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "email"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "companyId"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "department"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "String"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 137
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "InputObjectTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "EmployeeSortType"
+            },
+            "directives": [],
+            "fields": [
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "name"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "EmployeesSortDirection"
+                  }
+                },
+                "directives": []
+              },
+              {
+                "kind": "InputValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "age"
+                },
+                "type": {
+                  "kind": "NamedType",
+                  "name": {
+                    "kind": "Name",
+                    "value": "EmployeesSortDirection"
+                  }
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 97
+        }
+      },
+      {
+        "kind": "Document",
+        "definitions": [
+          {
+            "kind": "EnumTypeDefinition",
+            "name": {
+              "kind": "Name",
+              "value": "EmployeesSortDirection"
+            },
+            "directives": [],
+            "values": [
+              {
+                "kind": "EnumValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "ASC"
+                },
+                "directives": []
+              },
+              {
+                "kind": "EnumValueDefinition",
+                "name": {
+                  "kind": "Name",
+                  "value": "DESC"
+                },
+                "directives": []
+              }
+            ]
+          }
+        ],
+        "loc": {
+          "start": 0,
+          "end": 54
+        }
+      }
+    ],
+    "queries": [
+      "\n  domains(filters: [Filter], pagination: Pagination, sortings: [Sorting]): DomainList\n  domain(name: String!): Domain\n",
+      "\n  employees(ids:[String], name: String, sortOption: EmployeeSortType): [Employee]\n  companies(id: String, name: String, sortOption: CompanySortType): [Company]\n  "
+    ],
+    "mutations": [
+      "\n  createDomain (\n    domain: NewDomain!\n  ): Domain\n\n  updateDomain (\n    name: String!\n    patch: DomainPatch!\n  ): Domain\n\n  deleteDomain (\n    name: String!\n  ): Domain\n",
+      "\n  createOrUpdateEmployee(employee: EmployeeInput): Employee\n  deleteEmployee(ids: [String]): [Employee]\n  createCompany(company: CompanyInput): Company\n  "
+    ],
+    "subscriptions": [
+      "\n  systemRebooted: System\n"
+    ],
+    "directives": []
+  },
+  "resolvers": {
+    "queries": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "mutations": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "subscriptions": [
+      {
+        "systemRebooted": {}
+      }
+    ],
+    "directives": [],
+    "subqueryResolvers": [
+      {
+        "Company": {}
+      },
+      {
+        "Employee": {}
+      }
+    ]
+  }
+}
+2020-09-03T07:19:09.924Z info: Database connection established
+2020-09-03T07:19:10.094Z info: 🚀 Server ready at http://0.0.0.0:3000/graphiql
+2020-09-03T07:19:10.094Z info: 🚀 Subscriptions ready at ws://0.0.0.0:3000/subscriptions

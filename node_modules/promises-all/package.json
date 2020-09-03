@@ -1,0 +1,43 @@
+{
+  "name": "promises-all",
+  "version": "1.0.0",
+  "description": "Track down promise states of all promise functions executing in parallel. Similar to promise.all function, but it rejects the complete promise.all() even if any one of the promise fails, where as promises-all npm will indiviudally return you the states.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha",
+    "code-linting": "node_modules/jshint/bin/jshint --config jshint-config.json *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhargavThakrar/promise-hell.git"
+  },
+  "keywords": [
+    "promise",
+    "promises",
+    "promise.all",
+    "parallel",
+    "promise",
+    "asynchronous"
+  ],
+  "author": "Bhargav Thakrar",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird":"^3.4.7"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/BhargavThakrar/promise-hell/issues"
+  },
+  "homepage": "https://github.com/BhargavThakrar/promise-hell#readme"
+}

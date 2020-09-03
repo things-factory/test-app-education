@@ -1,0 +1,15 @@
+2020-09-03T00:06:02.270Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:06:06.573Z error: Variable "$sort" got invalid value { undefined: "ASC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:06:45.300Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:06:49.696Z error: Variable "$sort" got invalid value { undefined: "ASC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:07:27.794Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:08:07.652Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:08:09.310Z error: Variable "$sort" got invalid value { undefined: "ASC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:09:04.944Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:10:55.485Z error: Variable "$sort" got invalid value { undefined: "DESC" }; Field "undefined" is not defined by type CompanySortType.
+2020-09-03T00:17:24.640Z error: Variable "$sort" got invalid value { sort: "DESC" }; Field "sort" is not defined by type CompanySortType.
+2020-09-03T00:17:25.625Z error: Variable "$sort" got invalid value { sort: "ASC" }; Field "sort" is not defined by type CompanySortType.
+2020-09-03T00:47:13.130Z error: Variable "$sort" got invalid value { : "DESC" }; Field "" is not defined by type EmployeeSortType.
+2020-09-03T00:47:15.365Z error: Variable "$sort" got invalid value { : "ASC" }; Field "" is not defined by type EmployeeSortType.
+2020-09-03T00:47:16.157Z error: Variable "$sort" got invalid value { : "DESC" }; Field "" is not defined by type EmployeeSortType.
+2020-09-03T00:48:14.726Z error: Variable "$sort" got invalid value { : "DESC" }; Field "" is not defined by type EmployeeSortType.
