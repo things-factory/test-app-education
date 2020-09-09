@@ -17,6 +17,11 @@ export class AddItem extends LitElement {
       }
 
       form label {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        align-items: center;
+        justify-items: start;
+        grid-gap: 0.5rem;
         color: #353b48;
         font-weight: 700;
       }
